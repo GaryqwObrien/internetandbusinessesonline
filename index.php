@@ -225,6 +225,12 @@
 							 
 					 
 					</ul>
+<?php
+define('_MN_USER', '10da080bfd431baba4cf670ef5de3edc350bc966');
+require_once($_SERVER['DOCUMENT_ROOT'].'/'._MN_USER.'/magenet.php');
+$magenet = new Magenet();
+echo $magenet->getLinks();
+?>
 				</div>
 				<div class="col-sm-12 widget">
 					<!-- ads -->
